@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form class="search" onsubmit="return false">
+    <label>
+        <button id="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+            </svg>
+        </button>
+        <input type="search" id="search" onchange="search()">
+    </label>
+</form>
+
+<div id="result">
+    <div id="banks">
+
+    </div>
+</div>
+
+<div class="likes">
+    <button>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round" id="heart">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+        </svg>
+    </button>
+
+    <span>0</span>
+</div>
+
+</body>
+</html>

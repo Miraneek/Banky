@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+}
+
+#banks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1400px;
+    gap: 20px;
+    order: 3;
+}
+
+.bank-card {
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+
+span {
+    display: block;
+}
+
+.bank-card button {
+    padding: 10px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 750;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.bank-card button:hover {
+    transform: scale(1.02); /* Adjust the scale factor as needed */
+}
+
+.bank-card button:active {
+    transform: scale(0.95); /* Adjust the scale factor as needed */
+}
+
+.score {
+    font-weight: 1000;
+}
+
+.yellow .score {
+    color: #f7cd03;
+}
+
+.green .score {
+    color: #21c55d;
+}
+
+.blue .score {
+    color: #3c82f6;
+}
+
+.yellow h4 {
+    color: #f7cd03;
+}
+
+.green h4 {
+    color: #21c55d;
+}
+
+.blue h4 {
+    color: #3c82f6;
+}
+
+.yellow button {
+    background-color: #f7cd03;
+}
+
+.green button {
+    background-color: #21c55d;
+}
+
+.blue button {
+    background-color: #3c82f6;
+}
+
+.blue{
+    border: solid #3c82f6 4px;
+}
+
+.green{
+    border: solid #21c55d 4px;
+}
+
+.yellow{
+    border: solid #f7cd03 4px;
+}
+
+.search {
+    margin-top: 100px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.search button {
+    height: 60px;
+    background-color: #f7cd03;
+    border: none;
+    outline: none;
+}
+
+.search input {
+    height: 60px;
+    width: 600px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.search label {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center;
+}
+
+.likes{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    align-items: center;
+}
+
+.favourite {
+    box-shadow: 0 0 50px -32px #ff006e;
+}
+
+.likes button{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favourites{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;;
+    order: 1;
+}
+
+.favBanks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    gap: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.favourites .bank-card {
+    width: 245px; /* 70% of the original width (350px) */
+    border-radius: 14px; /* 70% of the original border-radius (20px) */
+    background-color: white;
+    margin-top: 28px; /* 70% of the original margin-top (40px) */
+    padding: 7px 14px; /* 70% of the original padding (10px 20px) */
+}
+
+.favourites .bank-card button {
+    padding: 7px 28px; /* 70% of the original padding (10px 40px) */
+    font-size: 14px; /* 70% of the original font-size (20px) */
+    border-radius: 7px; /* 70% of the original border-radius (10px) */
+}
+
+.favourites h3, .favourites h4, .favourites .bank-card span {
+    font-size: 70%; /* 70% smaller than the original size */
+}
